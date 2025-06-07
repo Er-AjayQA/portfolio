@@ -2,6 +2,7 @@ import React from "react";
 import { Spotlight } from "./ui/Spotlight";
 import { cn } from "@/lib/utils";
 import { TextGenerateEffect } from "./ui/TextGeneratorEffect";
+import MagicButton from "./ui/MAgicButton";
 
 const Hero = () => {
   return (
@@ -37,8 +38,13 @@ const Hero = () => {
             Dynamic Web Magic with Next.js
           </h2>
           <TextGenerateEffect
+            className="text-center text-[40px] md:text-5xl lg:text-6xl"
             words={"Transforming Concepts into Seamless User Experiences"}
           />
+          <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
+            Hi, I&apos;m Ajay, a MERN Full Stack Developer
+          </p>
+          <MagicButton label="See my work" />
         </div>
       </div>
     </div>
